@@ -1,0 +1,29 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7/jquery.inputmask.min.js"></script>
+<script>
+jQuery(document).ready(function($) {
+    $('#form-field-field_phone').inputmask({
+        mask: "+7 (999) 999-99-99",
+        placeholder: "+7 (___) ___-__-__",
+        showMaskOnHover: false,
+        onKeyDown: function (e) {
+            // Prevent non-numeric input
+            if (e.key.match(/[^\d]/)) {
+                e.preventDefault();
+            }
+        }
+    });
+});
+</script>
+
+How to use this Phone Number Input Mask script?
+1. Create a New page from Pages > Add New 
+4. Edit the page with "Elementor Pro"
+5. Take a container > Add a From Element from left side
+6. Take a Text field for Phone number 
+7. The Phone number id should be "phone"
+8. Take a custom code widget > Copy this above script and paste there
+8. Save the page and visit a new window
+
+Thank you. 
+
+If you need video tutorial you may check YouTube.
